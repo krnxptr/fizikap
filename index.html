@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizika</title>
+    <script src="fldt.js"></script>
+    <script src="https://kit.fontawesome.com/8d4c47a3aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="pngegg.png" alt="Fizika" height="200px"> 
+        </figure>
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="https://hu.wikipedia.org/wiki/Fizika">Fizika</a></li>
+                <li><a href="https://rad8012.members.iif.hu/kriterium/krit-feladatok12.pdf">Feladatok</a></li>
+                <li>Tamogatas</li>
+                <li id="clickable-text">Kapcsolatfelvetel</li>    
+              
+                 </ul>
+        </nav>
+    </header>
+
+    
+     
+
+    <div class="container">
+        <h1>Soros es parhuzamos ellenallasok ertekei</h1>
+        <form id="resistor-form">
+            <label for="resistors">Ird be az ellenallasokat (vesszovel elvalasztva):</label>
+            <input type="text" id="resistors" name="resistors" required>
+            <button type="button" onclick="calculateResistance()">Calculate</button>
+        </form>
+        <div class="results">
+            <h2>Results</h2>
+            <p id="series-result">A teljes soros ellenallas erteke: </p>
+            <p id="parallel-result">A teljes parhuzamos ellenallas erteke: </p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Egyenaramu aramkor szamolo</h1>
+        <form id="circuit-form">
+            <label for="resistors1">Ellenallasok ereje (vesszovel elvalasztva):</label>
+            <input type="text" id="resistors1" name="resistors1" required>
+            <label for="voltage">Feszultseg ereje (V):</label>
+            <input type="number" id="voltage" name="voltage" required>
+            <label for="current">Ird be a teljes aramfolyast (A):</label>
+            <input type="number" id="current" name="current">
+
+           
+            <button type="button" onclick="resetFields()">Reset</button>
+            
+        </form>
+        <div class="results">
+            <h2>Results</h2>
+            <p id="total-resistance">Teljes ellenallas: </p>
+            <p id="total-current">Atfolyo aram: </p>
+            <p id="voltage-drop">Feszultseg kulonbseg az ellenallasok kozott: </p>
+
+        </div>
+  
+   
+
+    </div>
+</body>
+</html>

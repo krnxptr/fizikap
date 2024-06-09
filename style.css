@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+     margin:auto;
+    margin-top: 50px;
+    }
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results p {
+    margin: 5px 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    background-color: grey;
+}
+figure{
+    padding: 10px;
+}
+figure img{
+    width: 250px;
+
+}
+nav .menu-principal{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+}
+nav .menu-principal li{
+    margin: 0 10px;
+    margin-top: 60px;
+    margin-right: 40px;
+    list-style-type:none;
+    font-size: 50px;
+}
+nav .menu-principal li a{
+    text-decoration: none;
+    color: white;
+}
+
+.megoldas{
+margin-top: 30px;
+align-items: center;
+text-align: center;
+font-size: 40px;
+}
